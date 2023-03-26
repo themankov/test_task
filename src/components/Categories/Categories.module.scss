@@ -1,0 +1,96 @@
+.categories_wrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 12%;
+  justify-content: center;
+  @media (max-width: 370px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+  }
+  .category_select {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+    gap: 1rem;
+    padding: 0 1rem;
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      @media (max-width: 460px) {
+        font-size: 1rem;
+      }
+    }
+    select {
+      appearance: none;
+
+      background-color: white;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.6rem 0.5rem 0.5rem;
+      margin: 0;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: inherit;
+      line-height: inherit;
+      position: relative;
+    }
+    &::after {
+      content: '';
+      width: 3.4rem;
+      background-size: contain;
+      aspect-ratio: 1;
+      background: url(./../../assets/img/arrow.svg) no-repeat;
+      position: absolute;
+      top: -40%;
+      transform: scale(0.5);
+      right: 2%;
+    }
+  }
+  .filter_select {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    position: relative;
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      @media (max-width: 460px) {
+        font-size: 1rem;
+      }
+    }
+    select {
+      appearance: none;
+
+      background-color: white;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem 2rem 0.5rem 0.5rem;
+      margin: 0;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: inherit;
+      line-height: inherit;
+    }
+    &::after {
+      content: '';
+      width: 3.4rem;
+      background-size: contain;
+      aspect-ratio: 1;
+      background: url(./../../assets/img/arrow.svg) no-repeat;
+
+      position: absolute;
+      top: -40%;
+      transform: scale(0.5);
+      right: 2%;
+    }
+  }
+}

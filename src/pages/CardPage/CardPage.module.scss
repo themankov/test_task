@@ -1,0 +1,57 @@
+.cardPage_section {
+  padding: 10%;
+  display: flex;
+  gap: 4rem;
+
+  @media (max-width: 870px) {
+    flex-direction: column;
+  }
+  .card_image {
+    width: 25rem;
+    height: 30rem;
+    @media (max-width: 870px) {
+      width: 17rem;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .card_details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    .card_title {
+      font-size: 4rem;
+      font-weight: bold;
+      max-width: 75rem;
+      @media (max-width: 730px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 440px) {
+        font-size: 2rem;
+      }
+    }
+    .description_block {
+      text-align: left;
+      h1 {
+        font-size: 2rem;
+      }
+      .description {
+        font-size: 1.5rem;
+      }
+    }
+    .card_author {
+      font-size: 1.6rem;
+      text-decoration: underline;
+      color: rgb(144, 139, 139);
+    }
+  }
+  .preloader {
+    margin: auto;
+  }
+}
